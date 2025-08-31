@@ -7,6 +7,13 @@ public class Delivery {
     int cantPedidos;
     String disponibilidad;
     
+    public Delivery(int telefonos, int cantPedidos, String disponibilidad) {
+        this.telefonos = telefonos;
+        this.cantPedidos = cantPedidos;
+        this.disponibilidad = disponibilidad;
+    }
+    
+    
 
     public int getTelefonos() {
         return telefonos;

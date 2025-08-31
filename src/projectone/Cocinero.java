@@ -2,27 +2,72 @@
 package projectone;
 
 
- 
-public class Cocinero extends Empleado {
-   private String Especialidad;
+public class Cocinero extends Empleado{
+    String jerarquia;
 
-    public Cocinero(String Especialidad, String puesto, String Nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
-        super(puesto, Nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
-        this.Especialidad = Especialidad;
+    public Cocinero(String jerarquia, String puesto, String nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
+        super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
+        this.jerarquia = jerarquia;
     }
 
-    
-    public String getEspecialidad() {
-        return Especialidad;
+    public String getJerarquia() {
+        return jerarquia;
     }
 
-    public void setEspecialidad(String Especialidad) {
-        this.Especialidad = Especialidad;
+    public void setJerarquia(String jerarquia) {
+        this.jerarquia = jerarquia;
     }
 
-   
-    
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    public int getHorarioEntrada() {
+        return horarioEntrada;
+    }
+
+    public void setHorarioEntrada(int horarioEntrada) {
+        this.horarioEntrada = horarioEntrada;
+    }
+
+    public int getHorarioSalida() {
+        return horarioSalida;
+    }
+
+    public void setHorarioSalida(int horarioSalida) {
+        this.horarioSalida = horarioSalida;
+    }
+
+    public int getAñosDeExperiencia() {
+        return añosDeExperiencia;
+    }
+
+    public void setAñosDeExperiencia(int añosDeExperiencia) {
+        this.añosDeExperiencia = añosDeExperiencia;
+    }
     
     
     
 }
+    
+

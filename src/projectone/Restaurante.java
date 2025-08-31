@@ -1,22 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package projectone;
 
-/**
- *
- * @author Perla
- */
+
 public class Restaurante {
    private String direccion;
    private int telefono;
    private int dimensiones;
+   public String nombre;
 
-    public Restaurante(String direccion, int telefono, int dimensiones) {
+    public Restaurante(String direccion, int telefono, int dimensiones, String nombre) {
         this.direccion = direccion;
         this.telefono = telefono;
         this.dimensiones = dimensiones;
+        this.nombre = nombre;
     }
 
     public String getDireccion() {

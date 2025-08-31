@@ -1,25 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package projectone;
 
-/**
- *
- * @author estudiante
- */
+
 public class Mesero extends Empleado {
     int mesasAsignadas;
 
-    public Mesero(int mesasAsignadas, String puesto, String Nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
-        super(puesto, Nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
+    public Mesero(int mesasAsignadas, String puesto, String nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
+        super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
         this.mesasAsignadas = mesasAsignadas;
     }
 
-   
-    
-    
-    
     public int getMesasAsignadas() {
         return mesasAsignadas;
     }
@@ -27,8 +17,53 @@ public class Mesero extends Empleado {
     public void setMesasAsignadas(int mesasAsignadas) {
         this.mesasAsignadas = mesasAsignadas;
     }
- 
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    public int getHorarioEntrada() {
+        return horarioEntrada;
+    }
+
+    public void setHorarioEntrada(int horarioEntrada) {
+        this.horarioEntrada = horarioEntrada;
+    }
+
+    public int getHorarioSalida() {
+        return horarioSalida;
+    }
+
+    public void setHorarioSalida(int horarioSalida) {
+        this.horarioSalida = horarioSalida;
+    }
+
+    public int getAñosDeExperiencia() {
+        return añosDeExperiencia;
+    }
+
+    public void setAñosDeExperiencia(int añosDeExperiencia) {
+        this.añosDeExperiencia = añosDeExperiencia;
+    } 
    
-    
-    
 }

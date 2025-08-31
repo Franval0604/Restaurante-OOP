@@ -7,15 +7,15 @@ package projectone;
  */
 public class Empleado {
     String puesto;
-    String Nombre;
+    String nombre;
     int salario;
     int horarioEntrada;
     int horarioSalida;
     int añosDeExperiencia;
 
-    public Empleado(String puesto, String Nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
+    public Empleado(String puesto, String nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
         this.puesto = puesto;
-        this.Nombre = Nombre;
+        this.nombre = nombre;
         this.salario = salario;
         this.horarioEntrada = horarioEntrada;
         this.horarioSalida = horarioSalida;
@@ -34,11 +34,11 @@ public class Empleado {
     
     
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     public int getSalario() {
@@ -74,7 +74,7 @@ public class Empleado {
     }
     
     public void MarcarEntrada(int horarioEntrada) {
-        System.out.println("Hola soy un Empleado y entro a las: " + horarioEntrada);
+        
 }
     
     

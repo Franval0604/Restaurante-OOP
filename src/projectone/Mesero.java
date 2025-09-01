@@ -5,7 +5,7 @@ package projectone;
 public class Mesero extends Empleado {
     int mesasAsignadas;
 
-    public Mesero(int mesasAsignadas, String puesto, String nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
+    public Mesero(int mesasAsignadas, String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
         this.mesasAsignadas = mesasAsignadas;
     }
@@ -42,19 +42,19 @@ public class Mesero extends Empleado {
         this.salario = salario;
     }
 
-    public int getHorarioEntrada() {
+    public String getHorarioEntrada() {
         return horarioEntrada;
     }
 
-    public void setHorarioEntrada(int horarioEntrada) {
+    public void setHorarioEntrada(String horarioEntrada) {
         this.horarioEntrada = horarioEntrada;
     }
 
-    public int getHorarioSalida() {
+    public String getHorarioSalida() {
         return horarioSalida;
     }
 
-    public void setHorarioSalida(int horarioSalida) {
+    public void setHorarioSalida(String horarioSalida) {
         this.horarioSalida = horarioSalida;
     }
 

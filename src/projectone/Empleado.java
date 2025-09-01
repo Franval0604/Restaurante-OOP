@@ -9,11 +9,11 @@ public class Empleado {
     String puesto;
     String nombre;
     int salario;
-    int horarioEntrada;
-    int horarioSalida;
+    String horarioEntrada;
+    String horarioSalida;
     int añosDeExperiencia;
 
-    public Empleado(String puesto, String nombre, int salario, int horarioEntrada, int horarioSalida, int añosDeExperiencia) {
+    public Empleado(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         this.puesto = puesto;
         this.nombre = nombre;
         this.salario = salario;
@@ -49,19 +49,19 @@ public class Empleado {
         this.salario = salario;
     }
 
-    public int getHorarioEntrada() {
+    public String getHorarioEntrada() {
         return horarioEntrada;
     }
 
-    public void setHorarioEntrada(int horarioEntrada) {
+    public void setHorarioEntrada(String horarioEntrada) {
         this.horarioEntrada = horarioEntrada;
     }
 
-    public int getHorarioSalida() {
+    public String getHorarioSalida() {
         return horarioSalida;
     }
 
-    public void setHorarioSalida(int horarioSalida) {
+    public void setHorarioSalida(String horarioSalida) {
         this.horarioSalida = horarioSalida;
     }
 

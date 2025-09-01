@@ -1,23 +1,18 @@
-
 package projectone;
 
+// Los salarios están en dólares
 
 public class Main {
     
-
     public static void main(String[] args) {
        
-        Comensales comensal1 = new Comensales(124,32);
-        System.out.println("Hola soy un comensal y mi mesa es: " + comensal1.getNroDeMesa());
+        Empleado mesero1 = new Empleado("Mesero", "David", 500, "19:00", "23:00", 4 );
+        Empleado cocinero1 = new Empleado("Cocinero", "Javier", 800, "18:30", "22:30", 7 );
+        Comensales comensal1 = new Comensales(21, 7);
         
-        
-        Empleado mesero = new Empleado("Mesero", "Juan", 900, 1400, 2100, 2);
-        System.out.println("Hola, soy un mesero y entro a las: " + mesero.getHorarioEntrada());
-        
-        Restaurante restaurante = new Restaurante("Avénida Genérica", 261, 500, "Palmeritas");
-        restaurante.getTelefono();
-        System.out.println("Nombre del restaurante: " + restaurante.nombre);
-       
+        System.out.println( cocinero1.getPuesto() + " - Nombre: " + cocinero1.nombre + " - registró su entrada a las " + cocinero1.horarioEntrada);
+        System.out.println( mesero1.getPuesto() + " - Nombre: " + mesero1.nombre + " - registró su entrada a las " + mesero1.horarioEntrada);
+        System.out.println("Un comensal registró un pedido (Nro de Pedido: " + comensal1.reservacion + ") para la mesa: " + comensal1.nroDeMesa);
     }
    
     

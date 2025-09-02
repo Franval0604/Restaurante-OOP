@@ -21,6 +21,10 @@ public class Empleado {
         this.horarioSalida = horarioSalida;
         this.añosDeExperiencia = añosDeExperiencia;
     }
+    
+    public void trabajar() {
+        System.out.println(nombre + " está trabajando");
+    }
 
     
     

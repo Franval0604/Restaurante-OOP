@@ -3,19 +3,16 @@ package projectone;
 
 
 public class Cocinero extends Empleado{
-    String jerarquia;
+    
 
-    public Cocinero(String jerarquia, String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
+    public Cocinero(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
-        this.jerarquia = jerarquia;
+        
     }
-
-    public String getJerarquia() {
-        return jerarquia;
-    }
-
-    public void setJerarquia(String jerarquia) {
-        this.jerarquia = jerarquia;
+    
+    @Override
+    public void trabajar() {
+        System.out.println(nombre + " está preparando platos");
     }
 
     public String getPuesto() {

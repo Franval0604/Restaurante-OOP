@@ -3,19 +3,16 @@ package projectone;
 
 
 public class Mesero extends Empleado {
-    int mesasAsignadas;
+    
 
-    public Mesero(int mesasAsignadas, String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
+    public Mesero(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
-        this.mesasAsignadas = mesasAsignadas;
+       
     }
-
-    public int getMesasAsignadas() {
-        return mesasAsignadas;
-    }
-
-    public void setMesasAsignadas(int mesasAsignadas) {
-        this.mesasAsignadas = mesasAsignadas;
+    
+    @Override
+    public void trabajar() {
+        System.out.println(nombre + " está atendiendo comensales");
     }
 
     public String getPuesto() {

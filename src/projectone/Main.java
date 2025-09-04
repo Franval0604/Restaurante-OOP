@@ -7,14 +7,21 @@ import java.util.ArrayList;
 public class Main {
     
     public static void main(String[] args) {
-       Plato plato1 = new Plato("panqueques",0,"huevo, azucar, agua, harina","");
-       
         
+        //eejemplo de sobrecarga de metodos 
+       Plato plato1 = new Plato("panqueques",0,"huevo, azucar, agua, harina",""); 
         plato1.mostrarIngredientes();
         plato1.mostrarIngredientes(true);
         
+        //segunda forma de de polimorfismo
+        Cocinero cocinero3 = new Cocinero("sopas", "Agustin", 500, "18:00", "23:00", 4);
+        Cocinero cocinero4 = new Cocinero("Salsas", "Orlando", 500, "16:00", "23:00", 4);
+        
+        cocinero3.registrarEntradaySalida();
+        cocinero4.registrarEntradaySalida();
         
         
+        //primera forma de polimorfismo
         ArrayList<Empleado> empleados = new ArrayList<>();
         Cocinero cocinero1 = new Cocinero("Cocinero", "David", 500, "19:00", "23:00", 4);
         empleados.add(cocinero1);

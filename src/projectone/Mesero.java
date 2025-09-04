@@ -10,11 +10,14 @@ public class Mesero extends Empleado {
        
     }
     
+    
+    
     @Override
-    public void trabajar() {
-        System.out.println(nombre + " está atendiendo comensales");
+    public void registrarEntradaySalida(){
+        System.out.println(" Mesero Nombre: " + nombre + " Empezo a atender mesas a las: " + horarioEntrada+ "y termino su turno a las: " + horarioSalida );
     }
-
+    
+    
     public String getPuesto() {
         return puesto;
     }

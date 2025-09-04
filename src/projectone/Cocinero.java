@@ -11,11 +11,13 @@ public class Cocinero extends Empleado{
     
     
 
+    
+    
+    // polimorfismo proveniente de empleado
     @Override
-    public void trabajar() {
-        System.out.println(nombre + " está preparando platos");
+    public void registrarEntradaySalida(){
+        System.out.println(" Cocinero Nombre: " + nombre + " -(Especialidad: " +getPuesto() + ")" + " Encendia la cocina las " + horarioEntrada+ "y la apago a las: " + horarioSalida );
     }
-
    
 
     public String getPuesto() {

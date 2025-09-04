@@ -19,7 +19,7 @@ public class Plato {
     
     
     public void mostrarIngredientes() { //receta sin proporciones
-            System.out.println("nombre de el plato:" +nombres+ "ingredientes:"+ ingredientes);
+            System.out.println("Nombre del plato: " + nombres + ", ingredientes: "+ ingredientes);
     
 }
     

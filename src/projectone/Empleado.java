@@ -1,10 +1,7 @@
 
 package projectone;
 
-/**
- *
- * @author estudiante
- */
+
 public class Empleado {
     String puesto;
     String nombre;
@@ -24,7 +21,7 @@ public class Empleado {
     }
     
     
-    //metodo para plomorfismo con cocinero y mesero
+    //metodo para polimorfismo con cocinero y mesero
     public void registrarEntradaySalida(){
         System.out.println(" - Nombre: " + nombre + " - registró su entrada a las " + horarioEntrada+ "y su salida a las " + horarioSalida );
     }
@@ -33,9 +30,8 @@ public class Empleado {
     public void trabajar() {
         System.out.println(nombre + " está trabajando");
     }
-    
-    
-    public Restaurante getLocal() {
+  
+   public Restaurante getLocal() {
         return local;
     }
 

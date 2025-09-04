@@ -7,7 +7,14 @@ import java.util.ArrayList;
 public class Main {
     
     public static void main(String[] args) {
+       Plato plato1 = new Plato("panqueques",0,"huevo, azucar, agua, harina","");
        
+        
+        plato1.mostrarIngredientes();
+        plato1.mostrarIngredientes(true);
+        
+        
+        
         ArrayList<Empleado> empleados = new ArrayList<>();
         Cocinero cocinero1 = new Cocinero("Cocinero", "David", 500, "19:00", "23:00", 4);
         empleados.add(cocinero1);

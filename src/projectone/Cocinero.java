@@ -3,17 +3,20 @@ package projectone;
 
 
 public class Cocinero extends Empleado{
-    
 
     public Cocinero(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
-        
     }
+        
     
+    
+
     @Override
     public void trabajar() {
         System.out.println(nombre + " está preparando platos");
     }
+
+   
 
     public String getPuesto() {
         return puesto;

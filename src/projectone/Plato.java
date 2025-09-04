@@ -3,10 +3,10 @@ package projectone;
 
 
 public class Plato {
-    String nombres;
-    int precios;
-    String ingredientes;
-    String recetas;
+   private String nombres;
+   private int precios;
+   private String ingredientes;
+   private  String recetas;
 
     public Plato(String nombres, int precios, String ingredientes, String recetas) {
         this.nombres = nombres;
@@ -14,6 +14,25 @@ public class Plato {
         this.ingredientes = ingredientes;
         this.recetas = recetas;
     }
+    
+    
+    
+    public void mostrarIngredientes() { //receta sin proporciones
+            System.out.println("nombre de el plato:" +nombres+ "ingredientes:"+ ingredientes);
+    
+}
+    
+    public void mostrarIngredientes(boolean conCantidades ) {
+             if (conCantidades) {
+            System.out.println("Ingredientes detallados del plato " + nombres + ": 200g de arroz, 1 cucharadita de sal, 500ml de agua.");
+        } else {
+            mostrarIngredientes(); // sino, muestra receta sin proporciones
+        }
+    
+}
+    
+    
+    
 
     public String getNombres() {
         return nombres;

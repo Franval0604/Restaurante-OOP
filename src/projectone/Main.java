@@ -14,22 +14,28 @@ public class Main {
         plato1.mostrarIngredientes(true);
         
         //segunda forma de de polimorfismo
-        Cocinero cocinero3 = new Cocinero("sopas", "Agustin", 500, "18:00", "23:00", 4);
-        Cocinero cocinero4 = new Cocinero("Salsas", "Orlando", 500, "16:00", "23:00", 4);
+        //polimorfismo con Cocinero
+        Cocinero cocinero3 = new Cocinero("Sopas", "cocinero", "Agustin", 500, "18:00", "23:00", 5);
+        Cocinero cocinero4 = new Cocinero("Salsas", "cocinero", "Orlando", 500, "16:00", "23:00", 2);
+        //polimorfismo con Mesero
+        Mesero mesero3 = new Mesero("mesero", "benito", 500, "18:00", "23:00", 4);
+        Mesero mesero4 = new Mesero("mesero", "adolfo", 1200, "18:00", "23:00", 10);
         
         cocinero3.registrarEntradaySalida();
         cocinero4.registrarEntradaySalida();
+        mesero3.registrarEntradaySalida();
+        mesero4.registrarEntradaySalida();
         
         
         //primera forma de polimorfismo
         ArrayList<Empleado> empleados = new ArrayList<>();
-        Cocinero cocinero1 = new Cocinero("Cocinero", "David", 500, "19:00", "23:00", 4);
+        Cocinero cocinero1 = new Cocinero("postres","Cocinero", "David", 500, "19:00", "23:00", 4);
         empleados.add(cocinero1);
         Mesero mesero1 = new Mesero("Mesero", "Javier", 800, "18:30", "22:30", 7);
         empleados.add(mesero1);
         Mesero mesero2 = new Mesero("Mesero", "Luciano", 600, "18:30", "22:30", 6);
         empleados.add(mesero2);
-        Cocinero cocinero2 = new Cocinero("Cocinero", "Maria", 550, "19:00", "23:00", 6);
+        Cocinero cocinero2 = new Cocinero("pastas","Cocinero", "Maria", 550, "19:00", "23:00", 6);
         empleados.add(cocinero2);
         Comensales comensal1 = new Comensales(21, 7);
         Comensales comensal2 = new Comensales(17, 0);

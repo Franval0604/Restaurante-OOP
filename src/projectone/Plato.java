@@ -7,6 +7,7 @@ public class Plato {
    private int precios;
    private String ingredientes;
    private  String recetas;
+   private Cocinero Cocinero; //asociando plato a cocinero
 
     public Plato(String nombres, int precios, String ingredientes, String recetas) {
         this.nombres = nombres;
@@ -31,9 +32,16 @@ public class Plato {
     
 }
     
-    
-    
+    //getters y setters
 
+    public Cocinero getCocinero() {
+        return Cocinero;
+    }
+
+    public void setCocinero(Cocinero Cocinero) {
+        this.Cocinero = Cocinero;
+    }
+    
     public String getNombres() {
         return nombres;
     }

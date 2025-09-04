@@ -3,23 +3,29 @@ package projectone;
 
 
 public class Cocinero extends Empleado{
+    private String especialidad;
 
-    public Cocinero(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
+    public Cocinero(String especialidad, String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         super(puesto, nombre, salario, horarioEntrada, horarioSalida, añosDeExperiencia);
+        this.especialidad = especialidad;
     }
-        
-    
-    
 
     
     
     // polimorfismo proveniente de empleado
     @Override
     public void registrarEntradaySalida(){
-        System.out.println(" Cocinero Nombre: " + nombre + " -(Especialidad: " +getPuesto() + ")" + " Encendia la cocina las " + horarioEntrada+ "y la apago a las: " + horarioSalida );
+        System.out.println(" Cocinero Nombre: " + nombre + " -(Especialidad: " +getEspecialidad() + ")" + " Encendia la cocina las " + horarioEntrada+ "y la apago a las: " + horarioSalida );
     }
-   
 
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+    }
+    
     public String getPuesto() {
         return puesto;
     }

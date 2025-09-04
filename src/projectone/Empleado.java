@@ -12,6 +12,7 @@ public class Empleado {
     String horarioEntrada;
     String horarioSalida;
     int añosDeExperiencia;
+    private Restaurante local; //APLICANDO "ASOSIACION" con restaurante
 
     public Empleado(String puesto, String nombre, int salario, String horarioEntrada, String horarioSalida, int añosDeExperiencia) {
         this.puesto = puesto;
@@ -32,9 +33,17 @@ public class Empleado {
     public void trabajar() {
         System.out.println(nombre + " está trabajando");
     }
+    
+    
+    public Restaurante getLocal() {
+        return local;
+    }
 
-    
-    
+    //getters y setters
+    public void setLocal(Restaurante local) {
+        this.local = local;
+    }
+
     public String getPuesto() {
         return puesto;
     }
@@ -84,9 +93,6 @@ public class Empleado {
         this.añosDeExperiencia = añosDeExperiencia;
     }
     
-    public void MarcarEntrada(int horarioEntrada) {
-        
-}
     
     
     

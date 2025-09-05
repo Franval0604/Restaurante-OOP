@@ -20,7 +20,18 @@ public class Restaurante {
     }
     
     
-
+    // mostrar lista de empleados
+    public void mostrarEmpleados() {
+        System.out.println("Empleados del restaurante " + nombre + ":");
+        for (Empleado e : empleados) {
+            System.out.println("- " + e.getNombre() + " (" + e.getPuesto() + ")");
+    
+      
+        }
+    }
+    
+    
+    //getters y setters
     public String getDireccion() {
         return direccion;
     }
@@ -49,14 +60,6 @@ public class Restaurante {
         return nombre;
     }
     
-  public void mostrarEmpleados() {
-        System.out.println("Empleados del restaurante " + nombre + ":");
-        for (Empleado e : empleados) {
-            System.out.println("- " + e.getNombre() + " (" + e.getPuesto() + ")");
-    
-      
-        }
-    }
 }
    
 

@@ -4,13 +4,18 @@ package projectone;
 
 public class Cocina  {
     String muebles;
-    String electrodomesticos;
+    String HorariodeServicio;
 
-    public Cocina(String muebles, String electrodomesticos) {
+    public Cocina(String muebles, String HorariodeServicio) {
         this.muebles = muebles;
-        this.electrodomesticos = electrodomesticos;
+        this.HorariodeServicio = HorariodeServicio;
     }
 
+  
+    
+    
+    
+    //getters y setters
     public String getMuebles() {
         return muebles;
     }
@@ -19,12 +24,12 @@ public class Cocina  {
         this.muebles = muebles;
     }
 
-    public String getElectrodomesticos() {
-        return electrodomesticos;
+    public String getHorariodeServicio() {
+        return HorariodeServicio;
     }
 
-    public void setElectrodomesticos(String electrodomesticos) {
-        this.electrodomesticos = electrodomesticos;
+    public void setHorariodeServicios(String electrodomesticos) {
+        this.HorariodeServicio = electrodomesticos;
     }
 
     

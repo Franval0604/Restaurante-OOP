@@ -6,14 +6,14 @@ public class Plato {
    private String nombres;
    private int precios;
    private String ingredientes;
-   private  String recetas;
+   private  String proporciones;
    private Cocinero Cocinero; //asociando plato a cocinero
 
     public Plato(String nombres, int precios, String ingredientes, String recetas) {
         this.nombres = nombres;
         this.precios = precios;
         this.ingredientes = ingredientes;
-        this.recetas = recetas;
+        this.proporciones = recetas;
     }
     
     
@@ -25,7 +25,7 @@ public class Plato {
     
     public void mostrarIngredientes(boolean conCantidades ) {
              if (conCantidades) {
-            System.out.println("Ingredientes detallados del plato " + nombres + ": 200g de arroz, 1 cucharadita de sal, 500ml de agua.");
+            System.out.println("Ingredientes detallados del plato " + nombres + "proporciones:"+ proporciones);
         } else {
             mostrarIngredientes(); // sino, muestra receta sin proporciones
         }
@@ -66,12 +66,12 @@ public class Plato {
         this.ingredientes = ingredientes;
     }
 
-    public String getRecetas() {
-        return recetas;
+    public String getProporciones() {
+        return proporciones;
     }
 
-    public void setRecetas(String recetas) {
-        this.recetas = recetas;
+    public void setProporciones(String recetas) {
+        this.proporciones = recetas;
     }
     
     

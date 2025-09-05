@@ -11,7 +11,7 @@ public class Mesero extends Empleado {
     }
     
     
-    
+    //polimorfismo proveniente de empleado
     @Override
     public void registrarEntradaySalida(){
         System.out.println(" Mesero Nombre: " + nombre + " Empezo a atender mesas a las: " + horarioEntrada+ "y termino su turno a las: " + horarioSalida );

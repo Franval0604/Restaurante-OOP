@@ -15,7 +15,8 @@ public class Cocinero extends Empleado{
     // polimorfismo proveniente de empleado
     @Override
     public void registrarEntradaySalida(){
-        System.out.println(" Cocinero Nombre: " + nombre + " -(Especialidad: " +getEspecialidad() + ")" + " Encendia la cocina las " + horarioEntrada+ "y la apago a las: " + horarioSalida );
+        System.out.println(" Cocinero Nombre: " + nombre + " -(Especialidad: " +getEspecialidad() + ")" + 
+                " -ocupó su estación: " + horarioEntrada+ "-y finalizo a las : " + horarioSalida );
     }
 
     public String getEspecialidad() {
